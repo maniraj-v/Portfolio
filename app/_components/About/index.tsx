@@ -25,7 +25,7 @@ export default function About() {
       <ul className="grid grid-cols-2 gap-3">
         {techStacks.map(({ label, icon }) => {
           return (
-            <li className="flex gap-2 items-center">
+            <li className="flex gap-2 items-center" key={label}>
               <span className="text-cyan-200 text-2xl">{icon}</span>
               <span className="text-sm">{label}</span>
             </li>
