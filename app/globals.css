@@ -2,9 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #000;
-  color: #fff;
-  font-size: 1rem;
-  box-sizing: border-box;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .font-variant-caps {
+    font-variant: small-caps;
+  }
+  .title-caps {
+    @apply font-heading font-variant-caps text-5xl font-bold tracking-wide;
+  }
+  .hover-underline-translate {
+    @apply bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500;
+  }
+  .hover-underline-translate-sm {
+    @apply bg-gradient-to-r from-accent to-accent bg-[length:0px_4px] hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500;
+  }
+  .animation-pause {
+    animation-play-state: paused;
+  }
 }
