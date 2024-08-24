@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const poppins = Poppins({
+const fontSans = Poppins({
   weight: ["100", "300", "400", "500", "600"],
   subsets: ["latin", "latin-ext"],
   style: ["normal", "italic"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body
+        className={cn(
+          "min-h-screen bg-black text-white font-sans font-normal tracking-normal",
+          fontSans.variable
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
