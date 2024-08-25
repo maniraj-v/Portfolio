@@ -100,3 +100,8 @@
     animation-play-state: paused;
   }
 }
+
+.sidebar-line {
+  border: 2px dashed transparent;
+  border-left-color: #97dffc;
+}

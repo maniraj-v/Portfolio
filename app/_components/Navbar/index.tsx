@@ -2,7 +2,7 @@ import { navLinks } from "@/app/_constants/navlinks";
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 w-full p-6 backdrop-blur-sm z-10">
+    <nav className="fixed top-0 w-full p-6 backdrop-blur-3xl z-10 bg-[#121212] bg-opacity-70">
       <ul className="flex gap-10 items-center justify-end mr-20">
         {navLinks.map(({ href, label }) => {
           return (
