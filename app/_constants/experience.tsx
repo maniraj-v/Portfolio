@@ -24,7 +24,7 @@ export const Experiences: {
     position: "Associate Staff Engineer",
     duration: "Sep 2022 - Present",
     logo: {
-      dark: "/worked_at_logos/nagarro/nagarro_logo.png",
+      dark: "/public/worked_at_logos/Nagarro_Logo.svg",
     },
     roles: [
       <>
@@ -61,7 +61,7 @@ export const Experiences: {
     position: "Senior Software Developer",
     duration: "Dec 2019 - Sep 2022",
     logo: {
-      dark: "/worked_at_logos/carelon/carelon_logo.png",
+      dark: "/public/worked_at_logos/Carelon_Logo.svg",
     },
     roles: [
       <>
@@ -91,7 +91,7 @@ export const Experiences: {
     position: "Application Developer",
     duration: "Aug 2017 - Nov 2019",
     logo: {
-      dark: "/worked_at_logos/inautix/inautix_logo.png",
+      dark: "/public/worked_at_logos/BNYMellon_Logo.svg",
     },
     roles: [
       <>

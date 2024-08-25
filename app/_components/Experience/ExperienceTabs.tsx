@@ -1,18 +1,27 @@
 import { ExperiencesList } from "@/app/_constants/experience";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
 import { BiRightArrow } from "react-icons/bi";
 
 const ExperienceTabs = () => {
   return (
     <Tabs defaultValue={ExperiencesList[0].name}>
-      <TabsList
-        className="w-full"
-        style={{ backgroundColor: "rgb(255 255 255 / 12%)" }}
-      >
-        {ExperiencesList.map(({ name }) => {
+      <TabsList className="w-full bg-gray-900 bg-opacity-80 h-auto">
+        {ExperiencesList.map(({ name, longName, logo }) => {
           return (
-            <TabsTrigger value={name} key={name} className="flex-1">
-              {name}
+            <TabsTrigger
+              value={name}
+              key={name}
+              className="flex-1 bg-gray-900 bg-opacity-80 text-gray-100 data-[state=active]:bg-gray-200 rounded-sm"
+            >
+              <Image
+                src={logo.dark.replace("/public", "")}
+                alt={name}
+                width={80}
+                height={20}
+                className="h-[28px] aspect-auto"
+                title={longName}
+              />
             </TabsTrigger>
           );
         })}
