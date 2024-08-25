@@ -71,9 +71,12 @@
   }
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
   }
   a {
     @apply text-cyan-200 hover:underline;
+    font: inherit;
+    color: inherit;
   }
 }
 
