@@ -10,8 +10,9 @@ export default function About() {
       <header className="title-caps mb-8">What i do.</header>
       <p className="text-gray-400 mb-6">
         I`ve been coding professionally for {professionalYears} years now and
-        currently working as a <b>Frontend Engineer</b> that focuses on{" "}
-        <b>architecture</b>,<b> API integrations</b>,{" "}
+        currently working as a <b>Frontend Engineer</b> who focuses on building{" "}
+        <b>secure</b>, <b>scalable</b> and <b>responsive</b> web applications,
+        <b> API integrations</b>,{" "}
         <b className="text-cyan-200">nitty-gritty business logics</b> and even
         <b> backend development</b> stuff now, how time flies!
       </p>

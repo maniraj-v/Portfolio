@@ -18,8 +18,8 @@ function Sidebar() {
       <p className="text-sm text-gray-400 mb-8">
         Hey! How nice of you to look at my personal site,{" "}
         <span className="text-cyan-200">Thank you!</span>
-        <br />I am software engineer that specializes at frontend, API
-        integration, recently found myself studying backend too.
+        <br />I am a software engineer who specializes at frontend, creating
+        pixel perfect User Interfaces, recently found myself building backend too.
       </p>
       <div className="flex gap-4 items-center mb-8">
         <a
