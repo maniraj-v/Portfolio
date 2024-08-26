@@ -22,7 +22,7 @@ function SkillsDialog() {
           See my full arsenal <IoMdOpen />
         </span>
       </DialogTrigger>
-      <DialogContent className="bg-slate-800 text-gray-200 rounded-sm overflow-hidden">
+      <DialogContent className="bg-slate-800 text-gray-200 rounded-md overflow-hidden max-w-[90%] lg:max-w-[520px]">
         <DialogHeader>
           <DialogTitle>Skill List</DialogTitle>
         </DialogHeader>
