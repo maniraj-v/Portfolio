@@ -3,9 +3,9 @@ import { MdDownload, MdEmail } from "react-icons/md";
 
 function Sidebar() {
   return (
-    <div className="block sm:fixed sm:max-w-[33%] px-8 sm:px-4 sm:pl-12">
-      <p className="text-5xl sm:text-6xl font-bold uppercase leading-none">
-        <span className="inline-block text-cyan-300 text-5xl sm:text-7xl hover:scale-110 transition-all">
+    <div className="block lg:fixed lg:max-w-[33%] px-8 lg:px-4 lg:pl-12">
+      <p className="text-6xl font-bold uppercase leading-none">
+        <span className="inline-block text-cyan-300 xl:text-7xl hover:scale-110 transition-all">
           Mani Raj
         </span>
         <br />
@@ -15,11 +15,12 @@ function Sidebar() {
         Or you could call me Mani. That works too . . .
       </p>
       <p className="text-xl text-cyan-200 font-bold mb-4">Frontend Engineer</p>
-      <p className="text-sm text-gray-400 mb-8">
+      <p className="text-sm text-gray-400 mb-8 max-w-[550px]">
         Hey! How nice of you to look at my personal site,{" "}
         <span className="text-cyan-200">Thank you!</span>
         <br />I am a software engineer who specializes at frontend, creating
-        pixel perfect User Interfaces, recently found myself building backend too.
+        pixel perfect User Interfaces, recently found myself building backend
+        too.
       </p>
       <div className="flex gap-4 items-center mb-8">
         <a

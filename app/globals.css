@@ -88,7 +88,7 @@
     font-variant: small-caps;
   }
   .title-caps {
-    @apply font-heading font-variant-caps text-[2.5rem] sm:text-5xl font-semibold sm:font-bold sm:tracking-wide leading-none;
+    @apply font-heading font-variant-caps text-5xl font-semibold lg:font-bold lg:tracking-wide leading-none;
   }
   .hover-underline-translate {
     @apply bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500;
@@ -99,9 +99,8 @@
   .animation-pause {
     animation-play-state: paused;
   }
-}
-
-.sidebar-line {
-  border: 2px dashed transparent;
-  border-left-color: #97dffc;
+  .sidebar-line {
+    border: 2px dashed transparent;
+    border-left-color: #97dffc;
+  }
 }
