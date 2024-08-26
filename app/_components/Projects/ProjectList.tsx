@@ -14,10 +14,22 @@ const ProjectList = () => {
           <li
             key={index}
             className={
-              "bg-[#252525] grid grid-cols-2 border border-gray-600 rounded-xl overflow-hidden min-h-48"
+              "bg-[#252525] grid sm:grid-cols-2 border border-gray-600 rounded-xl overflow-hidden min-h-48"
             }
           >
-            <div className={cn("py-4 px-4", isEven ? "" : "order-last")}>
+            <ScaleUpImage
+              src={imageSrc.replace("/public", "")}
+              alt={title}
+              width={1913}
+              height={874}
+            />
+            {/* Project Description */}
+            <div
+              className={cn(
+                "py-4 px-4 order-last",
+                isEven ? "sm:order-first" : ""
+              )}
+            >
               <p className="font-semibold flex gap-2 items-center">
                 <span className="text-base">
                   #{`${index + 1}`.padStart(2, "0")}
@@ -44,12 +56,6 @@ const ProjectList = () => {
                 </div>
               )}
             </div>
-            <ScaleUpImage
-              src={imageSrc.replace("/public", "")}
-              alt={title}
-              width={1913}
-              height={874}
-            />
           </li>
         );
       })}

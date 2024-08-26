@@ -3,9 +3,9 @@ import { MdDownload, MdEmail } from "react-icons/md";
 
 function Sidebar() {
   return (
-    <div className="fixed max-w-[33%] pl-12">
-      <p className="text-6xl font-bold uppercase leading-none">
-        <span className="inline-block text-cyan-300 text-7xl hover:scale-110 transition-all">
+    <div className="block sm:fixed sm:max-w-[33%] px-8 sm:px-4 sm:pl-12">
+      <p className="text-5xl sm:text-6xl font-bold uppercase leading-none">
+        <span className="inline-block text-cyan-300 text-5xl sm:text-7xl hover:scale-110 transition-all">
           Mani Raj
         </span>
         <br />
