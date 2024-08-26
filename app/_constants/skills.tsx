@@ -7,7 +7,33 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiMongodb,
+  SiApollographql,
+  SiRedux,
+  SiStyledcomponents,
+  SiGhost,
+  SiDocker,
+  SiGooglecloud,
+  SiCpanel,
+  SiRancher,
+  SiGitlab,
+  SiPostgresql,
+  SiMicrosoftsqlserver,
+  SiMysql,
+  SiRedis,
+  SiSocketdotio,
+  SiMui,
+  SiFramer,
+  SiGit,
+  SiGnubash,
+  SiVisualstudiocode,
+  SiExpress,
+  SiAzuredevops,
+  SiAntdesign,
+  SiTailwindcss,
+  SiShadcnui,
+  SiSourcetree,
 } from "react-icons/si";
+import { IconType } from "react-icons";
 
 // Used in About Section
 export const techStacks = [
@@ -32,11 +58,11 @@ export const techStacks = [
     icon: <SiReact />,
   },
   {
-    label: "NextJS",
+    label: "Next JS",
     icon: <SiNextdotjs />,
   },
   {
-    label: "NodeJS",
+    label: "Node JS",
     icon: <SiNodedotjs />,
   },
   {
@@ -44,3 +70,134 @@ export const techStacks = [
     icon: <SiMongodb />,
   },
 ];
+
+export type SkillCategory =
+  | "Frontend centric"
+  | "Styling Libraries"
+  | "CICD centric"
+  | "Backend centric"
+  | "Database centric"
+  | "Productivity Boost";
+
+export type Skill = {
+  name: string;
+  icon: IconType;
+};
+
+// Used in Skill Aresnal Dialog
+export const allSkillsList: {
+  [key in SkillCategory]: Skill[];
+} = {
+  "Frontend centric": [
+    {
+      name: "HTML",
+      icon: SiHtml5,
+    },
+    {
+      name: "CSS",
+      icon: SiCss3,
+    },
+    {
+      name: "Javascript (ES6+)",
+      icon: SiJavascript,
+    },
+    {
+      name: "Typescript",
+      icon: SiTypescript,
+    },
+    {
+      name: "React",
+      icon: SiReact,
+    },
+    {
+      name: "Next JS",
+      icon: SiNextdotjs,
+    },
+    {
+      name: "Apollo Graphql",
+      icon: SiApollographql,
+    },
+    {
+      name: "Redux",
+      icon: SiRedux,
+    },
+  ],
+  "Styling Libraries": [
+    {
+      name: "Styled Components",
+      icon: SiStyledcomponents,
+    },
+    {
+      name: "Ant Design",
+      icon: SiAntdesign,
+    },
+    {
+      name: "Material UI",
+      icon: SiMui,
+    },
+    {
+      name: "Framer Motion",
+      icon: SiFramer,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: SiTailwindcss,
+    },
+    {
+      name: "Shadcn UI",
+      icon: SiShadcnui,
+    },
+  ],
+  "Backend centric": [
+    {
+      name: "Node JS",
+      icon: SiNodedotjs,
+    },
+    {
+      name: "Express JS",
+      icon: SiExpress,
+    },
+  ],
+  "Database centric": [
+    {
+      name: "MySQL",
+      icon: SiMysql,
+    },
+    {
+      name: "MongoDb",
+      icon: SiMongodb,
+    },
+  ],
+  "CICD centric": [
+    {
+      name: "Docker",
+      icon: SiDocker,
+    },
+    {
+      name: "Azure Devops",
+      icon: SiAzuredevops,
+    },
+    {
+      name: "Gitlab",
+      icon: SiGitlab,
+    },
+  ],
+  "Productivity Boost": [
+    {
+      name: "VSCode",
+      icon: SiVisualstudiocode,
+    },
+    {
+      name: "Git",
+      icon: SiGit,
+    },
+    {
+      name: "Bash",
+      icon: SiGnubash,
+    },
+    {
+      name: "SourceTree",
+      icon: SiSourcetree,
+    },
+  ],
+};

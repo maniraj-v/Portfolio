@@ -104,3 +104,14 @@
     border-left-color: #97dffc;
   }
 }
+
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+::-webkit-scrollbar-track-piece {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 1em;
+}

@@ -1,4 +1,5 @@
 import { techStacks } from "@/app/_constants/skills";
+import SkillsDialog from "@/components/ui/SkillsDialog";
 import { GiCoffeePot } from "react-icons/gi";
 
 export default function About() {
@@ -23,7 +24,7 @@ export default function About() {
           <GiCoffeePot className="text-cyan-200 inline-block" />.
         </span>
       </p>
-      <ul className="grid grid-cols-2 gap-3">
+      <ul className="grid grid-cols-2 gap-3 mb-6">
         {techStacks.map(({ label, icon }) => {
           return (
             <li className="flex gap-2 items-center" key={label}>
@@ -33,6 +34,7 @@ export default function About() {
           );
         })}
       </ul>
+      <SkillsDialog />
     </section>
   );
 }
