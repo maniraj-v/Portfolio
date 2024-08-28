@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-[#121212] text-white font-sans font-normal tracking-normal",
+          "min-h-screen bg-[#121212] text-white text-base font-sans font-normal tracking-normal",
           fontSans.variable
         )}
       >

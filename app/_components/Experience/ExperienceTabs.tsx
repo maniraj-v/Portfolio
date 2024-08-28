@@ -12,7 +12,7 @@ const ExperienceTabs = () => {
             <TabsTrigger
               value={name}
               key={name}
-              className="flex-1 bg-gray-900 bg-opacity-80 text-gray-100 data-[state=active]:bg-gray-200 rounded-sm"
+              className="flex-1 bg-gray-900 bg-opacity-80 text-gray-100 data-[state=active]:bg-white rounded-sm"
             >
               <Image
                 src={logo.dark.replace("/public", "")}

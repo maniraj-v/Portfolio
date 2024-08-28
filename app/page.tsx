@@ -13,7 +13,7 @@ export default function Home() {
         <div className="mb-8 lg:mb-0 lg:col-span-2 pt-24 relative">
           <Sidebar />
         </div>
-        <div className="lg:sidebar-line lg:col-span-3 flex flex-col gap-16 max-w-[550px] p-8 lg:pt-16">
+        <div className="lg:sidebar-line lg:col-span-3 flex flex-col gap-16 max-w-[550px] py-8 px-6 lg:px-8 lg:pt-16">
           <About />
           <Experience />
           <Projects />

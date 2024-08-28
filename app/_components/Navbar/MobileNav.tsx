@@ -40,7 +40,7 @@ function NavigationItems({ toggle }: { toggle: () => void }) {
               <a
                 href={`#${href}`}
                 onClick={toggle}
-                className="text-gray-200 text-lg tracking-wider hover:no-underline hover:border-b-2 border-cyan-200 font-light"
+                className="text-gray-200 text-lg tracking-wider hover:no-underline hover:border-b-2 border-cyan-200"
               >
                 {label}
               </a>

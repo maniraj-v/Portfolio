@@ -3,16 +3,16 @@ import { MdDownload, MdEmail } from "react-icons/md";
 
 function Sidebar() {
   return (
-    <div className="block lg:fixed lg:max-w-[33%] px-8 lg:px-4 lg:pl-12">
+    <div className="block lg:fixed lg:max-w-[33%] px-6 lg:px-4 lg:pl-12">
       <p className="mb-4 lg:mb-0 text-sm lg:text-base">
         Ohh you found me?. Howdy! I am
       </p>
-      <p className="text-6xl font-bold uppercase leading-none">
-        <span className="inline-block text-cyan-300 xl:text-7xl hover:scale-110 transition-all">
+      <p className="font-bold uppercase leading-none">
+        <span className="inline-block text-cyan-300 text-5xl xl:text-7xl hover:scale-110 transition-all">
           Mani Raj
         </span>
         <br />
-        <span className="text-gray-100">Velrajan.</span>
+        <span className="text-gray-100 text-5xl xl:text-6xl">Velrajan.</span>
       </p>
       <p className="text-gray-200 text-sm lg:pl-4 mb-4">
         Or you could call me Mani. That works too . . .
