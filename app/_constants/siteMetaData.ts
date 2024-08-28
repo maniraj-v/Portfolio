@@ -1,12 +1,12 @@
 export const siteMetaData = {
   appName: "Mani Raj Velrajan Portfolio",
-  title: "Portfolio | Frontend Engineer",
+  title: "Portfolio | Mani Raj | Frontend Engineer",
   author: "Mani Raj Velrajan",
   headerTitle: "Next.js Blog",
   description: "Personal Portfolio showcasing the experience and project works",
   language: "en-us",
   theme: "dark", // system, dark or light
-  siteUrl: "https://portfolio-mani-raj-velrajan.vercel.app/", // your website URL
+  siteUrl: "https://portfolio-mani-raj-velrajan.vercel.app", // your website URL
   siteLogo: "/BrandLogo/MR_Logo.svg",
   socialBanner: "/projects/Portfolio_Home.png", // add social banner in the public folder
   email: "vsmaniraj1234@gmail.com",
