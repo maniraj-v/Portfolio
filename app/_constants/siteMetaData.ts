@@ -1,4 +1,5 @@
 export const siteMetaData = {
+  appName: "Mani Raj Velrajan Portfolio",
   title: "Portfolio | Frontend Engineer",
   author: "Mani Raj Velrajan",
   headerTitle: "Next.js Blog",
