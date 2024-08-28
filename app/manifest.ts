@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { siteMetaData } from "./app/_constants/siteMetaData";
+import { siteMetaData } from "./_constants/siteMetaData";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
