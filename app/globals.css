@@ -71,7 +71,7 @@
   }
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 10rem;
+    @apply scroll-p-20 lg:scroll-p-40;
   }
   a {
     @apply text-cyan-200 hover:underline;

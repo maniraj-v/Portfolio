@@ -21,3 +21,5 @@ export const Motion = React.forwardRef(
     );
   }
 );
+
+Motion.displayName = "Motion";
