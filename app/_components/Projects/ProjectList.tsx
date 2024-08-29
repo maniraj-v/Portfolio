@@ -1,5 +1,6 @@
 import { ExperiencesList } from "@/app/_constants/experience";
 import { projects } from "@/app/_constants/projects";
+import { projectTechMap } from "@/app/_constants/skills";
 import ScaleUpImage from "@/components/ui/ScaleUpImage";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
@@ -41,20 +42,31 @@ const ProjectList = () => {
               {/* Divider */}
               <div className="h-[0.5px] w-full bg-gray-200 opacity-50 mt-1 mb-2" />
               <p className="mb-3">{content}</p>
-              {liveUrl && (
-                <div className="w-full flex justify-center">
-                  <button className="px-4 py-2 border border-gray-600 border-opacity-40 rounded-sm hover:bg-gray-800 hover:bg-opacity-50">
-                    <a
-                      href={liveUrl}
-                      className="text-white"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      View Project
-                    </a>
-                  </button>
-                </div>
-              )}
+              <article className="flex justify-between gap-2 items-center">
+                <ul className="flex flex-wrap gap-2 items-center">
+                  {projectTechMap[title].map(({ name, icon }) => {
+                    return (
+                      <li
+                        className="text-cyan-200 text-xl"
+                        title={name}
+                        key={name}
+                      >
+                        {icon({})}
+                      </li>
+                    );
+                  })}
+                </ul>
+                <button className="px-4 py-2 border border-gray-600 border-opacity-40 rounded-sm hover:bg-gray-800 hover:bg-opacity-50">
+                  <a
+                    href={liveUrl}
+                    className="text-white"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Link
+                  </a>
+                </button>
+              </article>
             </div>
           </li>
         );

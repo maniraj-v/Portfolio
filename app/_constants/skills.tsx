@@ -201,3 +201,86 @@ export const allSkillsList: {
     },
   ],
 };
+
+export const projectTechMap: {
+  [key in string]: Skill[];
+} = {
+  "My Portfolio": [
+    {
+      name: "Typescript",
+      icon: SiTypescript,
+    },
+    {
+      name: "Next JS",
+      icon: SiNextdotjs,
+    },
+    {
+      name: "Framer motion",
+      icon: SiFramer,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: SiTailwindcss,
+    },
+  ],
+  "House Seekers": [
+    {
+      name: "JavaScript",
+      icon: SiJavascript,
+    },
+    {
+      name: "React",
+      icon: SiReact,
+    },
+    {
+      name: "Material UI",
+      icon: SiMui,
+    },
+  ],
+  "Visa Scout": [
+    {
+      name: "JavaScript",
+      icon: SiJavascript,
+    },
+    {
+      name: "React",
+      icon: SiReact,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: SiTailwindcss,
+    },
+  ],
+  "Agent Copilot": [
+    {
+      name: "Typescript",
+      icon: SiTypescript,
+    },
+    {
+      name: "React",
+      icon: SiReact,
+    },
+    {
+      name: "Material UI",
+      icon: SiMui,
+    },
+    {
+      name: "Web Socket",
+      icon: SiSocketdotio,
+    },
+  ],
+  "Comfy Sloth Store": [
+    {
+      name: "JavaScript",
+      icon: SiJavascript,
+    },
+    {
+      name: "React",
+      icon: SiReact,
+    },
+    {
+      name: "Styled Components",
+      icon: SiStyledcomponents,
+    },
+  ],
+};
