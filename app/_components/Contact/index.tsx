@@ -1,6 +1,15 @@
+import AnimateInView from "@/components/Animation/AnimateInView";
+import { fadeInUpSlower } from "@/app/_constants/animations";
+
 export default function Contact() {
   return (
-    <section id="contact">
+    <AnimateInView
+      as="section"
+      id="contact"
+      initial="initial"
+      animate="animate"
+      variants={fadeInUpSlower}
+    >
       <header className="title-caps mb-8">Say hi!</header>
       <p className="text-gray-400 mb-6">
         Though, I am fairly introverted myself. I do reply to messages as long
@@ -25,6 +34,6 @@ export default function Contact() {
         </a>
         .
       </p>
-    </section>
+    </AnimateInView>
   );
 }

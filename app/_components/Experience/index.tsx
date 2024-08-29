@@ -1,8 +1,16 @@
+import AnimateInView from "@/components/Animation/AnimateInView";
 import ExperienceTabs from "./ExperienceTabs";
+import { fadeInUpSlower } from "@/app/_constants/animations";
 
 export default function Experience() {
   return (
-    <section id="experience">
+    <AnimateInView
+      as="section"
+      id="experience"
+      initial="initial"
+      animate="animate"
+      variants={fadeInUpSlower}
+    >
       <header className="title-caps mb-8">Places i’ve worked.</header>
       <p className="text-gray-400 mb-6">
         Since 2017, had a privilege to work with several companies that enables
@@ -14,6 +22,6 @@ export default function Experience() {
         .
       </p>
       <ExperienceTabs />
-    </section>
+    </AnimateInView>
   );
 }

@@ -1,4 +1,7 @@
+import { fadeInUpSlower } from "@/app/_constants/animations";
 import { techStacks } from "@/app/_constants/skills";
+import AnimateInView from "@/components/Animation/AnimateInView";
+import { Motion } from "@/components/Animation/Motion";
 import SkillsDialog from "@/components/ui/SkillsDialog";
 import { GiCoffeePot } from "react-icons/gi";
 
@@ -7,7 +10,13 @@ export default function About() {
   const professionalYears = currentYear - 2017;
 
   return (
-    <section id="about">
+    <AnimateInView
+      as="section"
+      id="about"
+      initial="initial"
+      animate="animate"
+      variants={fadeInUpSlower}
+    >
       <header className="title-caps mb-8">What i do.</header>
       <p className="text-gray-400 mb-6">
         I`ve been coding professionally for {professionalYears} years now and
@@ -35,6 +44,6 @@ export default function About() {
         })}
       </ul>
       <SkillsDialog />
-    </section>
+    </AnimateInView>
   );
 }

@@ -12,6 +12,8 @@ import { IoMdOpen } from "react-icons/io";
 import ToggleButton from "./ToggleButton";
 import { navLinks } from "@/app/_constants/navlinks";
 import { cn } from "@/lib/utils";
+import { Motion } from "@/components/Animation/Motion";
+import { fadeInUpSlower, stagger } from "@/app/_constants/animations";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,10 +35,16 @@ export default function MobileNav() {
 function NavigationItems({ toggle }: { toggle: () => void }) {
   return (
     <div className="flex-1 flex justify-center translate-y-1/4">
-      <ul className="flex flex-col gap-8">
+      <Motion
+        as="ul"
+        className="flex flex-col gap-8"
+        initial="initial"
+        animate="animate"
+        variants={stagger}
+      >
         {navLinks.map(({ href, label }) => {
           return (
-            <li key={href}>
+            <Motion as="li" key={href} variants={fadeInUpSlower}>
               <a
                 href={`#${href}`}
                 onClick={toggle}
@@ -44,10 +52,10 @@ function NavigationItems({ toggle }: { toggle: () => void }) {
               >
                 {label}
               </a>
-            </li>
+            </Motion>
           );
         })}
-      </ul>
+      </Motion>
     </div>
   );
 }
