@@ -1,4 +1,6 @@
+import { simpleOpacity, stagger } from "@/app/_constants/animations";
 import { ExperiencesList } from "@/app/_constants/experience";
+import { Motion } from "@/components/Animation/Motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import { BiRightArrow } from "react-icons/bi";
@@ -54,18 +56,29 @@ const ExperienceTabs = () => {
               </p>
               <p className="text-sm">{duration}</p>
             </div>
-            <ul className="text-sm text-gray-400 flex flex-col gap-2">
+            <Motion
+              as="ul"
+              className="text-sm text-gray-400 flex flex-col gap-2"
+              initial="initial"
+              animate="animate"
+              variants={stagger}
+            >
               {roles?.map((item, index) => {
                 return (
-                  <li key={index} className="flex gap-2">
+                  <Motion
+                    as="li"
+                    key={index}
+                    className="flex gap-2"
+                    variants={simpleOpacity}
+                  >
                     <span className="self-start mt-[0.5px] text-cyan-200">
                       <BiRightArrow />
                     </span>
                     <span>{item}</span>
-                  </li>
+                  </Motion>
                 );
               })}
-            </ul>
+            </Motion>
           </TabsContent>
         );
       })}

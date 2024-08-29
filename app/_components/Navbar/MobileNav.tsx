@@ -34,7 +34,7 @@ export default function MobileNav() {
 
 function NavigationItems({ toggle }: { toggle: () => void }) {
   return (
-    <div className="flex-1 flex justify-center translate-y-1/4">
+    <div className="flex-1 flex justify-center items-center">
       <Motion
         as="ul"
         className="flex flex-col gap-8"

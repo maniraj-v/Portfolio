@@ -58,7 +58,7 @@ const simpleOpacity = {
   animate: {
     opacity: 1,
     transition: {
-      duration: DURATIONS.Fast,
+      duration: DURATIONS.Normal,
       ease: easing,
     },
   },
