@@ -42,7 +42,13 @@ function NavigationItems({ toggle }: { toggle: () => void }) {
         animate="animate"
         variants={stagger}
       >
-        {navLinks.map(({ href, label }) => {
+        {[
+          {
+            label: "Home",
+            href: "",
+          },
+          ...navLinks,
+        ].map(({ href, label }) => {
           return (
             <Motion as="li" key={href} variants={fadeInUpSlower}>
               <a
