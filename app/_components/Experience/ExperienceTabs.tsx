@@ -8,13 +8,13 @@ import { BiRightArrow } from "react-icons/bi";
 const ExperienceTabs = () => {
   return (
     <Tabs defaultValue={ExperiencesList[0].name}>
-      <TabsList className="w-full bg-gray-900 bg-opacity-80 h-auto">
+      <TabsList className="w-full bg-blue-950 bg-opacity-20 h-auto p-0 rounded-sm overflow-hidden">
         {ExperiencesList.map(({ name, longName, logo }) => {
           return (
             <TabsTrigger
               value={name}
               key={name}
-              className="flex-1 bg-gray-900 bg-opacity-80 text-gray-100 data-[state=active]:bg-white rounded-sm"
+              className="flex-1 bg-blue-950 bg-opacity-20 bg-blend-lighten py-2 border border-white border-opacity-40 text-gray-100 data-[state=active]:bg-white rounded-none overflow-hidden"
             >
               <Image
                 src={logo.dark.replace("/public", "")}
