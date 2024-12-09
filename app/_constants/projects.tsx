@@ -1,5 +1,3 @@
-import { projectTechMap } from "./skills";
-
 export const projects = [
   {
     title: "My Portfolio",
@@ -7,6 +5,20 @@ export const projects = [
       "Built portfolio application to showcase my work experience, side projects and freelance works",
     imageSrc: "/public/projects/Portfolio_Home.png",
     liveUrl: "https://portfolio-mani-raj-velrajan.vercel.app/",
+  },
+  {
+    title: "Ecommerce Fashion Store",
+    content:
+      "Built bilingual (English & Arabic) shopping application with detailed product pages, wishlist, cart, secure checkout with multiple payment gateways, and a responsive design for all devices. ",
+    imageSrc: "/public/projects/Nejree_Home.png",
+    liveUrl: "https://www.nejree.com/en?root=Women",
+  },
+  {
+    title: "Area Ranker | Find Top rated Neighborhood places",
+    content:
+      "Built responsive web application for cataloging and rating places (e.g., restaurants, shops) within specific neighborhoods or areas, featuring user engagement through voting.",
+    imageSrc: "/public/projects/Area_ranker.png",
+    liveUrl: "https://newornative.vercel.app/",
   },
   {
     title: "House Seekers",

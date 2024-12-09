@@ -15,7 +15,7 @@ const ProjectList = () => {
           <li
             key={index}
             className={
-              "bg-[#252525] grid lg:grid-cols-2 border border-gray-600 rounded-xl overflow-hidden min-h-48"
+              "bg-[#252525] grid border border-gray-600 rounded-xl overflow-hidden min-h-48"
             }
           >
             <ScaleUpImage
@@ -28,7 +28,7 @@ const ProjectList = () => {
             <div
               className={cn(
                 "py-4 px-4 order-last",
-                isEven ? "lg:order-first" : ""
+                isEven ? "" : ""
               )}
             >
               <p className="font-semibold flex gap-2 items-center">

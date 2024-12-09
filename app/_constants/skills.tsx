@@ -8,18 +8,12 @@ import {
   SiNodedotjs,
   SiMongodb,
   SiApollographql,
+  SiSupabase,
   SiRedux,
   SiStyledcomponents,
-  SiGhost,
   SiDocker,
-  SiGooglecloud,
-  SiCpanel,
-  SiRancher,
   SiGitlab,
-  SiPostgresql,
-  SiMicrosoftsqlserver,
   SiMysql,
-  SiRedis,
   SiSocketdotio,
   SiMui,
   SiFramer,
@@ -167,6 +161,10 @@ export const allSkillsList: {
       name: "MongoDb",
       icon: SiMongodb,
     },
+    {
+      name: "Supabase",
+      icon: SiSupabase,
+    },
   ],
   "CICD centric": [
     {
@@ -221,6 +219,42 @@ export const projectTechMap: {
     {
       name: "Tailwind CSS",
       icon: SiTailwindcss,
+    },
+  ],
+  "Ecommerce Fashion Store": [
+    {
+      name: "Typescript",
+      icon: SiTypescript,
+    },
+    {
+      name: "Next JS",
+      icon: SiNextdotjs,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: SiTailwindcss,
+    },
+    {
+      name: "ShadCN",
+      icon: SiShadcnui,
+    },
+  ],
+  "Area Ranker | Find Top rated Neighborhood places": [
+    {
+      name: "Typescript",
+      icon: SiTypescript,
+    },
+    {
+      name: "Next JS",
+      icon: SiNextdotjs,
+    },
+    {
+      name: "Supabase",
+      icon: SiSupabase,
+    },
+    {
+      name: "ShadCN",
+      icon: SiShadcnui,
     },
   ],
   "House Seekers": [
