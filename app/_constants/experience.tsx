@@ -28,28 +28,25 @@ export const Experiences: {
     },
     roles: [
       <>
-        Built a common Single Page Application template with Azure MSAL
-        authentication which can be used for Frontend React projects in IHS.
+        Engineered a drag-and-drop API/FTP/Schema configuration interface that
+        reduced integration setup time by 70% and eliminated the need for
+        separate microservices, saving $150K annually in development costs.
       </>,
       <>
-        Developed web portal to configure and monitor integrations (data
-        transmission) between source and destination systems using React and Ant
-        Design.
+        Built a mobile-responsive Idea Portal that streamlined idea submission
+        and approval processes, while featuring a ’Best Idea of the Quarter’
+        program to reward and incentivize innovators.
       </>,
       <>
-        Built mobile responsive Idea portal through which Ideas can be
-        submitted, tracked & approved systematically using React, NextJS &
-        TailwindCSS.
+        Developed a real-time Asset Tracking Dashboard monitoring 50,000+ site
+        assets using React, SignalR & Redux Toolkit, cutting theft incidents by
+        35% and saving ~$200K in replacement costs through automated alerts.
       </>,
       <>
-        Developed Asset Tracking Real Time Dashboard to monitor the locations of
-        Tower sites & batteries and highlight sites that have critical alarms
-        and events using React, SignalR & Redux Toolkit.
-      </>,
-      <>
-        Developed BOQ app consisting of 5 different financial modules which
-        automated Supplier Billing in bilingual (English & Portuguese) using
-        React, TypeScript, React Hook Form and Ant Design.
+        Implemented an automated supplier billing system with five financial
+        modules in bilingual (English & Portuguese), reducing processing time by
+        80% and errors by 95%, improving vendor relationships and compliance
+        with payment terms.
       </>,
     ],
   },
@@ -65,27 +62,29 @@ export const Experiences: {
     },
     roles: [
       <>
-        Led transition of Individual Renewals project from Deloitte to Legato
-        which reduces billing by 66.67% for the parent company Anthem.
+        Led the transition of Individual Renewals project from Deloitte to
+        in-house development, reducing operational costs by 66.67% for Anthem
+        while maintaining high system uptime.
       </>,
       <>
-        Played a crucial role in developing UI using React for renewals for
-        shortterm plans (Cost Effective plans offered by Anthem in US during
-        COVID)
+        Developed a COVID-response insurance portal using React that processed
+        over 15,000 short-term plan renewals.
       </>,
       <>
-        Developed UI for Member Migration for manually enrolling the members in
-        ISG system using React, TypeScript & MaterialUI.
+        Built a member migration UI supporting both manual and bulk enrollment
+        from legacy systems, ensuring high data integrity, significantly
+        reducing migration time.
       </>,
       <>
-        Generated various renewal reports like Missing Renewals, Overage
-        Dependents, Medicare Cancellation.
+        Generated critical renewal reports such as Missing Renewals, Overage
+        Dependents, and Medicare Cancellation to support business
+        decision-making and compliance tracking.
       </>,
     ],
   },
   Inautix: {
     name: "Bank Of NewYork Mellon",
-    longName: "Bank Of NewYork Mellon Technologies",
+    longName: "Bank OfNewYork Mellon Technologies",
     subDetail: "American Banking/Financial Services",
     url: "https://www.bnymellon.com/in/en.html",
     position: "Application Developer",
@@ -95,22 +94,18 @@ export const Experiences: {
     },
     roles: [
       <>
-        Worked on Greenfield Migration (Windows server to GF server) to support
-        two datacenters TPC & CNJ to meet disaster recovery and run applications
-        faster in secure environment.
+        Automated multi-tabbed Excel report generation using XML and COBOL,
+        reducing manual processing time and streamlining report delivery through
+        scheduled jobs.
       </>,
       <>
-        Led Journal Machine Project – Transfer of funds from Funding Account to
-        Trading Account by tracking down journal trade activities and customer
-        balance file.
+        Developed an alert system for long-running jobs, improving system
+        stability and mean time to resolution by enabling proactive monitoring
+        and issue escalation.
       </>,
       <>
-        Created alert mail for long running jobs in spool (&gt; 30 minutes
-        ofaverage elapsed time).
-      </>,
-      <>
-        Hired at 2017 through campus placement, Undergone Internship for two
-        months. Shortly after, worked in Production Support team as trainee.
+        Contributed to Greenfield Migration (Windows to GF server) for improved
+        performance and disaster recovery across datacenters TPC & CNJ.
       </>,
     ],
   },

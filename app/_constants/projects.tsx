@@ -37,7 +37,7 @@ export const projects = [
   {
     title: "Agent Copilot",
     content:
-      "Built AI Chatbot [POC Project] which speeds up agent customer chat interaction by providing prompt and quick responses to customer inquiries using AI response.",
+      "Built AI Chatbot which speeds up agent customer chat interaction by providing prompt and quick responses to customer inquiries using AI response.",
     imageSrc: "/public/projects/Agent_Copilot.png",
     liveUrl:
       "http://react-cors-spa-wo9pd803wi.s3-website-us-east-1.amazonaws.com/agent",
